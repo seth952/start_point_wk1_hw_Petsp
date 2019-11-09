@@ -102,10 +102,24 @@ def add_pet_to_customer(customer, newpet)
     newpet.count
 end
 
-def customer_can_afford_pet(customer, newpet)
-  if customer[:price] > newpet[:price]
-    return true
-  else
-    return false
-  end
+def customer_can_afford_pet(customer1, newpet)
+   if customer1[:price] == newpet[:price]
+
+end
+     return true
+end
+
+def customer_can_afford_pet(customer2, newpet)
+    if customer2[:price] != newpet[:price]
+
+end
+  return false
+end
+
+
+def customer_can_afford_pet(customer3, newpet)
+   if customer3[:price] == newpet[:price]
+
+end
+return true
 end
