@@ -215,7 +215,7 @@ class TestPetShop < Minitest::Test
 #
   def test_sell_pet_to_customer__pet_found
     customer = @customers[0]
-    pet = find_pet_by_name(@pet_shop,"Arthur")
+    pet = find_pet_by_name(@pet_shop,"Merlin")
 
     sell_pet_to_customer(@pet_shop, pet, customer)
 
@@ -224,6 +224,9 @@ class TestPetShop < Minitest::Test
     assert_equal(100, customer_cash(customer))
     assert_equal(1900, total_cash(@pet_shop))
   end
+end
+
+
 #
 #   def test_sell_pet_to_customer__pet_not_found
 #     customer = @customers[0]
